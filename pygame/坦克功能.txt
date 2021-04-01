@@ -1,0 +1,124 @@
+基于面向对象的分析
+1、有哪些类：   所具备的功能
+    主逻辑类
+        开始游戏
+        结束游戏
+    坦克类：我方坦克，敌方坦克
+        移动
+        射击
+    子弹类
+        移动
+        展示子弹
+    爆炸效果类
+        展示爆炸效果类
+    墙壁类
+        属性：是否可以通过
+    音效类
+        播放音乐
+
+2、坦克大战项目框架的搭建
+    涉及到的类、用代码简单的实现
+import pygame
+class MainGame():
+    def __init__(self):
+        pass
+    #开始游戏方法
+    def startGame(self):
+        pass
+    #结束游戏方法
+    def endGame(self):
+        pass
+class Tank():
+    def __init__(self):
+        pass
+    #坦克的移动方法
+    def move(self):
+        pass
+    #射击方法
+    def shot(self):
+        pass
+    #展示坦克
+    def displayTank(self):
+        pass
+class MyTank(Tank):
+    def __init__(self):
+        pass
+class EnemyTank(Tank):
+    def __init__(self):
+        pass
+class Bullet():
+    def __init__(self):
+        pass
+    #子弹的移动方法
+    def move(self):
+        pass
+    #展示子弹的方法
+    def displayBullet(self):
+        pass
+class Explode():
+    def __init__(self):
+        pass
+    #展示爆炸效果
+    def displayExplode(self):
+        pass
+class Wall():
+    def __init__(self):
+        pass
+    #展示墙壁的方法
+    def displayWall(self):
+        pass
+class Music():
+    def __init__(self):
+        pass
+    #开始播放音乐
+    def play(self):
+        pass
+    
+3、
+    #新增功能；
+    创建游戏窗口；
+    用到游戏引擎中的功能模块
+    官方开发文档
+4、
+    #新增功能；
+    事件处理
+        点击关闭按钮，退出程序的事件
+        方向控制，子弹发射
+5、
+    #
+    文字绘制
+6、
+    实现主坦克图片载入
+7、
+    新增speed属性，用来控制坦克移动的快慢
+    事件处理：
+        实现坦克的方向的移动
+        修改坦克的位置（left,top)
+        取决于坦克的速度
+8、
+    优化功能
+        坦克可以移出边界
+        控制坦克移出
+9、
+    优化功能
+        优化坦克移动方式：
+            按下方向键，坦克持续移动
+            松开方向键，坦克停下来
+10、
+    新增敌方坦克
+        完善敌方坦克类
+        创建敌方坦克，将敌方坦克展示到窗口中
+11、
+    优化敌方坦克剩余数量
+    实现敌方坦克的移动
+        随机移动
+12、
+    完善子弹类的封装
+13、
+    完善子弹的发射
+    tank 发射子弹->
+14、
+    实现子弹的移动
+15、
+    子弹打中墙壁的时候，直接消除而不是粘在墙上
+    解决我方坦克可以无限发射子弹的问题（最多发3颗）
